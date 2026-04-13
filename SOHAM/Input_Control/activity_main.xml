@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Course"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQL"/>
+
+            <RadioButton
+                android:id="@+id/radioAndroid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REACT"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Skills"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkCoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coding"/>
+
+        <CheckBox
+            android:id="@+id/checkDesign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Country"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ToggleButton
+            android:id="@+id/toggleUpdates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="Updates ON"
+            android:textOff="Updates OFF"
+            android:backgroundTint="#FFC107"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#FFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Laboratories"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- Lab 1 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab1"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Java Programming"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 2 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab2"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adv Database System"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 3 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab3"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Database Engg"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 4 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab4"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R Programming"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 5 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab5"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Project Lab"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 6 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="6">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab6"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Research Lab"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 7 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="7">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab7"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Technology"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 8 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab8"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Python Prog"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 9 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab9"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C Programming"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 10 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab10"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="System Prog"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 11 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="11">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab11"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile App Dev"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Lab 12 -->
+            <androidx.cardview.widget.CardView
+                style="@style/LabCardStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:onClick="openLab"
+                android:tag="12">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/lab12"
+                        tools:src="@android:drawable/ic_menu_gallery"/>
+                    <TextView
+                        style="@style/LabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C++ Programming"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

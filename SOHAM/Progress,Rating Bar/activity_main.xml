@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="#E3F2FD">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading File..."
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Circular Progress -->
+    <ProgressBar
+        android:id="@+id/circularProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#2196F3"/>
+
+    <!-- Horizontal Progress -->
+    <ProgressBar
+        android:id="@+id/horizontalProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="12dp"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="25dp"
+        android:progressTint="#4CAF50"/>
+
+    <!-- Progress Text -->
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Done Text -->
+    <TextView
+        android:id="@+id/txtDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Complete ✅"
+        android:textSize="20sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Rating -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:visibility="gone"
+        android:progressTint="#FFC107"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
